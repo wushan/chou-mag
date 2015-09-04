@@ -55,11 +55,11 @@ function bones_ahoy() {
 
   // cleaning up random code around images
   add_filter( 'the_content', 'bones_filter_ptags_on_images' );
-  // new excerpt length
-  function custom_excerpt_length( $length ) {
-    return 20;
-  }
-  add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+  
+  // function custom_excerpt_length( $length ) {
+  //   return 1;
+  // }
+  // add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
