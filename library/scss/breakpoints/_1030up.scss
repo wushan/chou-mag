@@ -1,0 +1,55 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.header {
+	@include full;
+	z-index: 999;
+}
+#inner-header {
+
+	#logo {
+		@include span(3 of 12);
+	}
+	nav {
+		@include span(9 of 12 last);
+		ul {
+			display: block;
+      @include span(9 of 12);
+      &.nav.panel {
+        @include span(3 of 12 last);
+
+        li {
+          float: right;
+          &:last-child {
+            background-color: $black;
+          }
+        }
+      }
+      &.sub-menu {
+        width: auto;
+
+      }
+			li {
+        border-right: 1px solid rgba($white, .1);
+			}
+		}
+		&>ul {
+			&>li {
+				&:last-child {
+					background-color: $link-color;
+				}
+			}
+		}
+		.mobile-trigger {
+			display: none;
+		}
+	}
+}

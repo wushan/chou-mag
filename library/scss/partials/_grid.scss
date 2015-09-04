@@ -1,0 +1,142 @@
+/******************************************************************
+Site Name:
+Author:
+
+We are using Susy2 for the Grid.
+We will define the main blocks such as Main-Content, Sidebar ...etc here.
+
+http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+
+******************************************************************/
+
+// import susy
+@import "susy";
+// import breakpoint
+@import "breakpoint";
+
+//Global Settings
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  gutter-position: after,
+  math: fluid,
+);
+
+/*
+Mobile Grid Styles
+These are the widths for the mobile grid.
+There are four types, but you can add or customize
+them however you see fit.
+*/
+// Wrapper
+.wrap {
+  @include breakpoint(320px) {
+    width: 100%;
+    @include box-sizing(border-box);
+    padding: 0 1.5em;
+  }
+  @include breakpoint(768px) {
+
+  }
+  @include breakpoint(1030px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  @include breakpoint(1440px) {
+    //width: 1280px;
+  }
+
+}
+// Main Content
+.main-wrapper {
+  @include breakpoint(320px) {
+
+  }
+  @include breakpoint(768px) {
+
+  }
+  @include breakpoint(1030px) {
+    @include span(6.8 of 12);
+  }
+  @include breakpoint(1240px) {
+
+  }
+}
+//Sidebar(s)
+.sidebar {
+  @include breakpoint(320px) {
+    display: none;
+  }
+  @include breakpoint(768px) {
+
+  }
+  @include breakpoint(1030px) {
+    display: block;
+    @include span(3.2 of 12);
+    &.last {
+      @include span(2 of 12 last);
+    }
+  }
+  @include breakpoint(1240px) {
+
+  }
+}
+.page {
+  // .main-wrapper {
+  //   @include breakpoint(1030px) {
+  //     @include span(8.8 of 12);
+  //   }
+  // }
+  // .sidebar {
+  //   @include last;
+  // }
+}
+.single, .archive {
+  .main-wrapper {
+
+  }
+  .sidebar {
+
+  }
+}
+.archive {
+  &.term-post-format-video {
+    .main-wrapper {
+      @include breakpoint(1030px) {
+        @include span(9 of 12 last);
+        .hentry {
+          @include gallery(4 of 12 after);
+        }
+      }
+      @include breakpoint(1240px) {
+        @include span(9 of 12 last);
+      }
+    }
+    .sidebar {
+      @include breakpoint(1030px) {
+        display: block;
+        @include span(3 of 12);
+        &.last {
+          display: none;
+        }
+      }
+      @include breakpoint(1240px) {
+        @include span(3 of 12);
+        display: block;
+        &.last {
+          display: block;
+          @include span(3 of 12 last);
+        }
+      }
+    }
+  }
+}
+.page {
+  .main-wrapper {
+
+  }
+  .sidebar {
+
+
+  }
+}
