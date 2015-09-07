@@ -482,7 +482,7 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-body { font-family: "museo-slab", "source-han-sans-traditional", sans-serif, "xingothic-tc-w3", "Helvetica Neue", Helvetica, Arial, "source-han-sans-traditional", sans-serif; font-size: 100%; line-height: 1.6; color: #333333; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-family: "museo-slab", "source-han-sans-traditional", sans-serif, "Helvetica Neue", Helvetica, Arial, "source-han-sans-traditional", sans-serif; font-size: 100%; line-height: 1.6; color: #333333; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .clr:before, .searchform:before, #inner-header:before, #bones-related-posts:before, .term-post-format-video .chouchoutv-logo:before, .widget.recent-posts-widget-with-thumbnails li:before, .widget.followus ul:before, .clr:after, .searchform:after, #inner-header:after, #bones-related-posts:after, .term-post-format-video .chouchoutv-logo:after, .widget.recent-posts-widget-with-thumbnails li:after, .widget.followus ul:after { content: ''; clear: both; display: block; }
 
@@ -657,9 +657,9 @@ POSTS & CONTENT STYLES
 #bones-related-posts .related_post a h4 { padding: 1em; font-weight: 500; margin: 0; }
 #bones-related-posts .related_post .thumb img { width: 100%; height: auto; display: block; }
 
-.single-format-video .wide-video-wrapper { padding-top: 65px; background-color: #3c3c3c; }
+.single-format-video .wide-video-wrapper { padding-top: 65px; background-color: #2f2f2f; }
 .single-format-video .wide-video-wrapper .wide-video-inner { margin: 0 auto; }
-@media (min-width: 1030px) { .single-format-video .wide-video-wrapper .wide-video-inner { max-width: 854px; } }
+@media (min-width: 1030px) { .single-format-video .wide-video-wrapper .wide-video-inner { max-width: 1440px; } }
 .single-format-video .wide-video-wrapper .wide-video-inner iframe { width: 100%; display: block; margin: 0 auto; }
 .single-format-video .main-wrapper { padding-top: 1.5em; }
 .single-format-video .sidebar { padding-top: .5em; }
@@ -678,7 +678,7 @@ POSTS & CONTENT STYLES
 .term-post-format-video .chouchoutv-logo { padding: 0 0 2em 0; }
 .term-post-format-video .chouchoutv-logo svg { display: block; margin: 0 auto; }
 
-.single-title, .page-title, .entry-title { margin: 0; font-family: "museo-slab", "source-han-sans-traditional", sans-serif; }
+.single-title, .page-title, .entry-title { margin: 0; font-family: "museo-slab", "source-han-sans-traditional", sans-serif; font-weight: 700; }
 
 .single-title { color: #639; }
 

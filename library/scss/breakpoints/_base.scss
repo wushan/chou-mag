@@ -16,7 +16,7 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $museo, 'xingothic-tc-w3', $sans-serif;
+	font-family: $museo, $sans-serif;
 	font-size: 100%;
 	line-height: 1.6;
 	color: $text-color;
@@ -449,11 +449,11 @@ POSTS & CONTENT STYLES
     	}
     	.wide-video-wrapper {
     		padding-top: 65px;
-    		background-color: lighten($black, 10%);
+    		background-color: lighten($black, 5%);
     		.wide-video-inner {
     			margin: 0 auto;
     			@include breakpoint(1030px) {
-	    			max-width: 854px;
+	    			max-width: 1440px;
 	    		}
     			iframe {
     				width: 100%;
@@ -563,6 +563,7 @@ POSTS & CONTENT STYLES
 		.entry-title {
 			margin: 0;
 			font-family: $museo;
+			font-weight: 700;
 		}
 
 		.single-title {
